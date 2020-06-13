@@ -6,7 +6,7 @@ sudo apt install udisks2 -y
 echo "" > /var/lib/dpkg/info/udisks2.postinst
 sudo dpkg --configure -a
 sudo apt-mark hold udisks2
-sudo apt-get install kde-standard exo-utils tigervnc-standalone-server tigervnc-common dbus-x11 --no-install-recommends -y
+sudo apt-get install kde-plasma-desktop exo-utils tigervnc-standalone-server tigervnc-common dbus-x11 --no-install-recommends -y
 sudo apt-get clean
 mkdir -p ~/.vnc
 wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/APT/XFCE4/xstartup -P ~/.vnc/
